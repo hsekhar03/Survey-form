@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<link rel="stylesheet" type="text/css" href="survey.css">
+		<title>survey form by Himanshu</title>
+	</head>
+	<body>
+		<div class="container">
+			<h1 id= "title">car survey</h1>
+			<p id="description">
+				a survey about cars
+			</p>
+			<form accept-charset="utf-8" id="survey-form">
+				<label for="name" id="name-label">
+				Name:</label><br>
+				<input type="text" name="name" 
+				placeholder="applicant name" id="name" 
+				required><br>
+				<label for="email" id="email-label">
+				Email id:</label><br>
+				<input type="email" name="email" 
+				placeholder="Enter correct email" id="email" 
+				required><br>
+				<label for="age" id="number-label">
+				Age (Optional):</label><br>
+				<input type="number" name="age" 
+				placeholder="Enter your age" id="number" 
+				min="5" max="80"><br>
+				<label for="gender" class="gender">Gender:<br>
+				<label for="male">
+					<input type="radio" name="gender" 
+					value="male">Male</label><br>
+				<label for="female">
+					<input type="radio" name="gender" 
+					value="female">Female</label><br>
+				<label for="other">
+					<input type="radio" name="gender" 
+					value="other">Other</label><br>
+				</label>
+				<label class="vehicle">which of these do you own?
+				<br>
+				<label for="vehicle1">
+				<input type="checkbox" name="vehicle1" value="Bike"> I have a bike</label><br><label for="vehicle2">
+					<input type="checkbox" name="vehicle2" 
+					value="Car"> I have a car</label><br>
+				<label for="vehicle3">
+		  			<input type="checkbox" name="vehicle3" value="Bicycle"> I have a bicycle</label> <br> </label>
+				<label for="cars" class="car">Choose you dream car:
+				</label> <select name="cars" id="dropdown">
+		      			<option value="volvo">Volvo</option>
+		      			<option value="tesla">Tesla</option>
+		      			<option value="jaguar">Jaguar</option>
+		      			<option value="audi">Audi</option>
+						<option value="other">Other</option>
+				</select><br>
+		  		<label for="comment">Comments<br>
+		  			<textarea name="comment" 
+			 		class="comment">Tell us more</textarea>
+				</label><br>
+				<button type="Submit" id="submit">Submit</button>
+			</form>
+		</div>
+	</body>
+</html>
