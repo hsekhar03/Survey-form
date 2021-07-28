@@ -1,2 +1,2 @@
 # Survey-form
- html static survey form
+ static html survey form
